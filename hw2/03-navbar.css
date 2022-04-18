@@ -1,45 +1,43 @@
 body {
-  border: 1px solid;
+  border: 0px solid;
   margin-top: 0px;
-  width: 50vw;
-  height: 20vh;
+  padding-top: 0px;
+  margin-left: 0px;
 }
 
 .nav-list {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+.list-item{
+  width: 200px;
+  height: 60px;
+  padding: 0px;
+  text-align: center;
+  margin: 0px;
+  display: block;
+  float: left;
+  background-color: var(--green);
   
 }
 
 .list-item:hover {
-  background-color: orange;
-  color: black;
+  background-color: var(--orange);
+  color: var(--black);
 }
 
 .list-item > a:hover {
-  color: black;
+  color: var(--black);
 
 }
 
 .nav-link {
-}
-
-nav ul {
-  width: 90%;
-  height: 60%;
-  margin: 0px;
-  background-color: green;
-  text-align: left;
-  padding: 20px 0px 20px 0px;
-}
-
-li {
-  display: inline;
-  margin: 0px;
-  padding: 20px 0px 20px 0px;
-}
-
-a {
-  margin: 5px 10px;
-  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-decoration: none;
-  padding: 20px 0px 20px 0px;
+  display: block;
+  color: var(--white);
+  
 }
