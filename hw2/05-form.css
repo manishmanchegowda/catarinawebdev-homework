@@ -13,11 +13,12 @@
 }
 
 .btn {
+    padding-left: 20px;
 }
 
 .btn-primary {
-    width: 100px;
-    text-align: center;
+    width: 180px;
+    height: 40px;
     background-color: var(--green);
     border: 1px solid var(--green);
     border-radius: 3px;
@@ -35,8 +36,8 @@
 }
 
 .btn-secondary {
-    width: 100px;
-    text-align: center;
+    width: 180px;
+    height: 40px;
     background-color: var(--white);
     border: 1px solid var(--green);
     border-radius: 3px;
@@ -66,7 +67,7 @@ h1 {
 
 .legend-bold {
     font-weight: bold;
-    font-size: 0.875em;
+    font-size: 1em;
 }
 
 .label1 {
