@@ -44,6 +44,7 @@
     padding: 5px 20px;
     color: var(--green);
 }
+
 .btn-secondary:hover{
     text-align: center;
     background-color: var(--orange);
@@ -52,7 +53,6 @@
     padding: 5px 20px;
     color: var(--black);
 }
-
 
 body {
     margin: auto;
