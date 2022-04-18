@@ -20,7 +20,6 @@ body {
   display: block;
   float: left;
   background-color: var(--green);
-  
 }
 
 .list-item:hover {
@@ -30,7 +29,6 @@ body {
 
 .list-item > a:hover {
   color: var(--black);
-
 }
 
 .nav-link {
@@ -39,5 +37,4 @@ body {
   text-decoration: none;
   display: block;
   color: var(--white);
-  
 }
