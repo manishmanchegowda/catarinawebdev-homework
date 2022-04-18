@@ -1,7 +1,12 @@
 .form {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: auto;
+    padding: 10px;
 }
 
 .form-element {
+    text-align: center;
 }
 
 .btn {
@@ -12,3 +17,73 @@
 
 .btn-secondary {
 }
+
+body {
+    width: 50vw;
+    margin: auto;
+    border: 1px solid black;
+    padding: 20px 80px 50px 80px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+  .legend-bold {
+    font-weight: bold;
+    font-size: 0.875em;
+}
+
+.label1 {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 120px;
+}
+
+#input1 {
+    display: inline-block;
+    width: 200px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    text-align: center;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 3px;
+    padding: 5px 20px;
+    color: white;
+}
+  
+input[type="reset"] {
+    width: 100px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 3px;
+    padding: 5px 20px;
+    color: green;
+}
+  
+input[type="submit"]:hover {
+    text-align: center;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 20px;
+    color: black;
+}
+  
+input[type="reset"]:hover {
+    text-align: center;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 20px;
+    color: black;
+}
+  
+
+
