@@ -1,5 +1,24 @@
 const calculateTime = (date1, date2) => {
   // Given two dates, calculate and return the amount of time elapsed in years and months
+  let start_date = new Date(date1);
+  let end_date = new Date(date2);
+  const [start_month, start_year] = [
+    start_date.getMonth(),
+    start_date.getFullYear(),
+  ];
+  const [end_month, end_year] = [end_date.getMonth(), end_date.getFullYear()];
+  const year_diff = start_year - end_year;
+  const month_diff = start_month - end_month;
+
+  if (year_diff === 0) {
+    console.log("Age: " + month_diff + " months");
+  } else if (month_diff === 0) {
+    console.log("Age: " + year_diff + " years");
+  } else if (isNaN(year_diff) || isNaN(month_diff)) {
+    console.log("Error: Invalid input provided.");
+  } else {
+    console.log("Age: " + year_diff + " years, " + month_diff + " months");
+  }
 };
 
 // Date() formats:
