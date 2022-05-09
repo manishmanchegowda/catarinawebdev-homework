@@ -10,15 +10,18 @@ const calculateTime = (date1, date2) => {
   const year_diff = start_year - end_year;
   const month_diff = start_month - end_month;
 
-  if (year_diff === 0) {
-    console.log("Time elapsed: " + month_diff + " months");
-  } else if (month_diff === 0) {
-    console.log("Time elapsed: " + year_diff + " years");
-  } else if (isNaN(year_diff) || isNaN(month_diff)) {
-    console.log("Error: Invalid input provided.");
-  } else {
-    console.log("Time elapsed: " + year_diff + " years, " + month_diff + " months");
+  let stringbe = "Time elapsed: "
+  
+  if(isNaN(start_date) || isNaN(end_date)){
+    return "Error: Invalid input provided"
   }
+  else if (year_diff===0){
+    stringbe = stringbe + month_diff + " months"
+  }
+  else{
+    stringbe = stringbe + year_diff + " years," + month_diff + " months"
+  }
+  return stringbe
 };
 
 // Date() formats:
