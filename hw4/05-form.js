@@ -32,7 +32,7 @@ function handleSubmit(event) {
       console.log("Email: no submission");
     }
     if (newsletter !== "") {
-      console.log("Newsletter: Yes");
+      console.log("Newsletter: ", newsletter);
     } else {
       console.log("Newsletter: no submission");
     }
