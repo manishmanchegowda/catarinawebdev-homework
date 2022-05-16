@@ -146,19 +146,15 @@ const starships = [
 const mapStarships = (input) => {
   // Return an array with the name, manufacturer, and cost (if not unknown) of each ship
   // Format: "Star Destroyer, manufactured by Kuat Drive Yards - cost: 150,000,000 credits"
-  const result = input.map(
-    (item) =>
-      item.name +
-      ", manufactured by" +
-      item.manufacturer +
-      ", - cost: " +
-      parseInt(item.cost_in_credits).toLocaleString() +
-      " credits"
-  );
-
-  return result;
-
-  //return 'mapStarships';
+  var mapStarships = input.map(function(everyObject){
+    if (everyObject.cost_in_credits!== 'unknown'){
+      return `${everyObject.name}, manufactured by ${everyObject.manufacturer} - cost: ${parseInt(everyObject.cost_in_credits).toLocaleString('en-US')} credits`
+    }
+    else{
+      return `${everyObject.name}, manufactured by ${everyObject.manufacturer}`
+    }
+  })
+  return mapStarships;
 };
 
 const filterStarships = (input) => {
